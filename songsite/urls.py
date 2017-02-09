@@ -18,4 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    # just refer all traffic to the Admin site
+    url(r'^', admin.site.urls),
 ]
