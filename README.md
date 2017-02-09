@@ -3,10 +3,15 @@ Here's a site that shows off an example of how to
 create one-to-many associations and customize admin
 interfaces in Django.
 
+Run these commands to make sure you're got the proper database
+set up, it has all of the most-recent migrations, and you've
+created your own local super user.
+
 ```
 createdb songsite
 python3 manage.py makemigrations
 python3 manage.py migrate
+python3 manage.py createsuperuser
 ```
 
 ## Licensing
